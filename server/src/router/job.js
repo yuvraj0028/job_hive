@@ -80,7 +80,9 @@ router.patch("/jobs/:id", async (req, res) => {
 router.get("/jobs/find/:name", async (req, res) => {
   const name = req.params.name;
   try {
-    const jobs = await Job.find({ title: new RegExp("^" + name) });
+    const jobs = await Job.find({
+      title: new RegExp("^" + name + "|" + name + "$", "i"),
+    });
     if (!jobs) {
       return res.status(404).send();
     }

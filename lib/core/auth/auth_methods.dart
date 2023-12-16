@@ -84,6 +84,7 @@ class AuthMethods {
         }
       }
     } catch (e) {
+      print(e);
       if (context.mounted) {
         res = 'unable to login user, try again later';
       }

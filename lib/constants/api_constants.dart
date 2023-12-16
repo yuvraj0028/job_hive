@@ -1,4 +1,4 @@
-const ipV4 = '192.168.63.4';
+const ipV4 = 'YOUR IPV4 ADDRESS HERE';
 const registerUserAPI = 'http://$ipV4:3000/users';
 const loginUserAPI = 'http://$ipV4:3000/users/login';
 const getUserData = 'http://$ipV4:3000/users/me';
