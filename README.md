@@ -1,4 +1,4 @@
-# job_hive
+# Job Hive
 
 A new Flutter project.
 
